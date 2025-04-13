@@ -2265,7 +2265,7 @@
 	content: '';
 	width: 15px;
 	height: 15px;
-	border: 3px solid darkred;
+	border: 3px solid #ee8584;
 	background-color: white;
 	border-radius: 50%;
 	position: absolute;
@@ -2277,7 +2277,7 @@
 	height: 1px;
 	width: 5%;
 	position: absolute;
-	background-color: #890025;
+	background-color: #ee8584;
 	top: 16px;
 	right: 8px; 
 }
@@ -2300,7 +2300,7 @@
 	z-index: 999;
 	top: -10px;
 	left: 20px;
-	background-color: rgba(139, 0, 0, 0.8);
+	background-color: #ee8584 !important;
 	color: white;
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5); 
 }
@@ -2316,7 +2316,7 @@
 	top: 0px;
 	left: -10px;
 	z-index: 2;
-	border-right: 10px solid #5e0808;
+	border-right: 10px solid #ee8584;
 	border-bottom: 0px solid transparent;
 	border-top: 10px solid transparent; 
 }
@@ -2355,7 +2355,7 @@
 	justify-content: center; 
 }
 .timeLine .row .item .caption .image .title {
-	background-color: darkred;
+	background-color: #ee8584;
 	padding: 0px 20px;
 	position: absolute;
 	z-index: 9;
@@ -2374,7 +2374,7 @@
 	z-index: 2;
 	border-left: 10px solid transparent;
 	border-bottom: 0px solid transparent;
-	border-top: 10px solid #5e0000; 
+	border-top: 10px solid #ee8584; 
 }
 .timeLine .row .item .textContent {
 	padding: 15px 10px; 
@@ -2383,7 +2383,7 @@
 	text-justify: justify;
 	text-align: left;
 	padding: 0px 10px;
-	border-left: 5px solid #890025;
+	border-left: 5px solid #ee8584 !important;
 }
 .timeLine .row .pull-right {
 	float: right;
@@ -2395,7 +2395,7 @@
 	content: '';
 	width: 15px;
 	height: 15px;
-	border: 3px solid darkred;
+	border: 3px solid #ee8584;
 	background-color: white;
 	border-radius: 50%;
 	position: absolute;
@@ -2407,7 +2407,7 @@
 	height: 1px;
 	width: 5%;
 	position: absolute;
-	background-color: #890025;
+	background-color: #ee8584;
 	top: 21px;
 	left: 12px; 
 }

@@ -86,7 +86,8 @@
 			image: {
 				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 				titleSrc: function(item) {
-					return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+					return "";
+					// return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
 				}
 			}
 		});
@@ -113,7 +114,7 @@
     Countdown Clock
     ................................................. */
 	function makeTimer() {
-		var endTime = new Date("01 June 2019 10:45:00 GMT+01:00");			
+		var endTime = new Date("20 July 2025 11:00:00 GMT+07:00");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -130,10 +131,10 @@
 		if (minutes < "10") { minutes = "0" + minutes; }
 		if (seconds < "10") { seconds = "0" + seconds; }
 
-		$("#days").html(days + "<h6>Days</h6>");
-		$("#hours").html(hours + "<h6>Hrs</h6>");
-		$("#minutes").html(minutes + "<h6>Min</h6>");
-		$("#seconds").html(seconds + "<h6>Sec</h6>");
+		$("#days").html(days + "<h6>Ngày</h6>");
+		$("#hours").html(hours + "<h6>Giờ</h6>");
+		$("#minutes").html(minutes + "<h6>Phút</h6>");
+		$("#seconds").html(seconds + "<h6>Giây</h6>");
 	}
 	setInterval(function() { makeTimer(); }, 1000);
 
