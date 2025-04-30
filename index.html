@@ -1,89 +1,132 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
+
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>SweetWedding - Văn Mạnh & Ái Huyền</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Pogo Slider CSS -->
-    <link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site Metas -->
+	<title>SweetWedding - Văn Mạnh & Ái Huyền</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Pogo Slider CSS -->
+	<link rel="stylesheet" href="css/pogo-slider.min.css">
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
 	<style>
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 Aspect Ratio */
+			height: 0;
+			overflow: hidden;
+		}
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.contact-buttons {
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		.contact-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			color: white;
+			text-decoration: none;
+			font-size: 24px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s, box-shadow 0.2s;
+		}
+
+		.contact-button:hover {
+			transform: scale(1.1);
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.call {
+			background-color: rgb(238, 133, 132);
+		}
+
+		.contact-button i {
+			font-size: 20px;
+		}
+	</style>
 
 </head>
+
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
 	<!-- LOADER -->
-    <div id="preloader">
+	<div id="preloader">
 		<div class="preloader pulse">
 			<h3>Văn Mạnh - Ái Huyền</h3>
 		</div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
-	
+	</div><!-- end loader -->
+	<!-- END LOADER -->
 	<!-- Start header -->
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
-            <div class="container">
+			<div class="container">
 				<a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="image"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
 					<span></span>
 					<span></span>
 				</button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#about">Cặp đôi</a></li>
-                        <li><a class="nav-link" href="#story">Tình yêu</a></li>
-                        <li><a class="nav-link" href="#gallery">Album cưới</a></li>
-						<li><a class="nav-link" href="#events">Sự kiện	</a></li>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link" href="#about">Cặp đôi</a></li>
+						<li><a class="nav-link" href="#story">Tình yêu</a></li>
+						<li><a class="nav-link" href="#gallery">Album cưới</a></li>
+						<li><a class="nav-link" href="#events">Sự kiện </a></li>
 						<li><a class="nav-link" href="#wedding">Mừng cưới</a></li>
-						<li><a class="nav-link" href="#contact">Liên hệ</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+						<li><a class="nav-link" href="#contact">Đăng ký bài hát</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 	<!-- End header -->
-	
+
 	<!-- Start Banner -->
 	<div class="home-slider">
 		<ul class="rslides">
@@ -92,27 +135,30 @@
 			<li><img src="images/slider-03.jpg" alt=""></li>
 		</ul>
 		<div class="lbox-details">
-			<h1>Văn Mạnh <i class="fa fa-heart-o"></i> Ái Huyền</h1>
+			<h1>Văn Mạnh
+				<i class="fa fa-heart-o"></i>
+				Ái Huyền
+			</h1>
 			<h2>We're getting married</h3>
-			<div class="countdown main-time clearfix">
-				<div id="timer">
-					<h3>20-07-2025</h3>
-					<div id="days"></div>
-					<div id="hours"></div>
-					<div id="minutes"></div>
-					<div id="seconds"></div>
+				<div class="countdown main-time clearfix">
+					<div id="timer">
+						<h3>20-07-2025</h3>
+						<div id="days"></div>
+						<div id="hours"></div>
+						<div id="minutes"></div>
+						<div id="seconds"></div>
+					</div>
 				</div>
-			</div>
 		</div>
 	</div>
 	<!-- End Banner -->
-	
+
 	<!-- Start About us -->
 	<div id="about" class="about-box">
 		<div class="about-a1">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 text-center">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-center">
 						<div class="title-box">
 							<h2>Văn Mạnh <i class="fa fa-heart-o"> </i> Ái Huyền </h2>
 						</div>
@@ -127,13 +173,18 @@
 										<img class="img-fluid" src="images/avatar.JPG" alt="" />
 									</div>
 									<ul>
-										<li><a href="https://www.facebook.com/hara.117"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.facebook.com/hara.117"><i
+													class="fa fa-facebook"></i></a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-6 col-sm-12">
-								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Ái Huyền </span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
-								<p>Cô gái đến từ xứ Quảng mộng mơ, hiện đang sinh sống và làm việc tại thành phố Hồ Chí Minh. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi chó và nuôi ước mơ có cho mình một vườn hồng khoe sắc.</p>
+								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Ái Huyền </span> <i
+										class="fa fa-heart-o" aria-hidden="true"></i></h2>
+								<p>Cô gái đến từ xứ Quảng mộng mơ, hiện đang sinh sống và làm việc tại thành phố Hồ Chí
+									Minh. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu
+									thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi chó và nuôi ước mơ có cho mình một
+									vườn hồng khoe sắc.</p>
 							</div>
 						</div>
 						<div class="row align-items-center about-main-info">
@@ -143,13 +194,18 @@
 										<img class="img-fluid" src="images/avatar1.JPG" alt="" />
 									</div>
 									<ul>
-										<li><a href="https://www.facebook.com/mmma2344"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://www.facebook.com/mmma2344"><i
+													class="fa fa-facebook"></i></a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-6 col-sm-12">
-								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Văn Mạnh </span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
-								<p>Là chàng kỹ sư phần mềm đang công tác tại thành phố Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: "Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về". </p>
+								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Văn Mạnh </span> <i
+										class="fa fa-heart-o" aria-hidden="true"></i></h2>
+								<p>Là chàng kỹ sư phần mềm đang công tác tại thành phố Hồ Chí Minh. Là một người hiền
+									lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: "Gia đình
+									là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con
+									người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về". </p>
 							</div>
 						</div>
 					</div>
@@ -158,7 +214,7 @@
 		</div>
 	</div>
 	<!-- End About us -->
-	
+
 	<!-- Start Story -->
 	<div id="story" class="story-box main-timeline-box">
 		<div class="container">
@@ -169,190 +225,195 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="timeLine">
 				<div class="row">
 					<div class="lineHeader hidden-sm hidden-xs"></div>
 					<div class="lineFooter hidden-sm hidden-xs"></div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item" >
-							<div class="caption image-meet">
-								<div class="star center-block">
-									<span class="h3">02</span>
-									<span>09</span>
-									<span>2022</span>
-								</div>
-								<div class="image image-meet">
-									<img src="images/meet1.jpeg" alt="" />
-									<div class="title">
-										<h2>Gặp gỡ <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
-									</div>
-								</div>
-								<div class="textContent">
-									<p class="lead">Chúng tôi gặp nhau tại Phan Thiết và ngay lập tức tìm thấy tiếng nói chung, vì vậy một thời gian sau buổi hẹn hò đầu tiên của chúng tôi đã diễn ra.</p>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+						<div class="caption image-meet">
+							<div class="star center-block">
+								<span class="h2">02</span>
+								<span>09</span>
+								<span>2022</span>
+							</div>
+							<div class="image image-meet">
+								<img src="images/meet1.jpg" alt="" />
+								<div class="title">
+									<h2>Gặp gỡ <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
-							<div class="caption image-meet">
-								<div class="star center-block">
-									<span class="h3">25</span>
-									<span>12</span>
-									<span>2022</span>
-								</div>
-								<div class="image image-meet">
-									<img src="images/meet2.jpeg" alt="" />
-									<div class="title">
-										<h2>Hẹn hò <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
-									</div>
-								</div>
-								<div class="textContent">
-									<p class="lead">Giáng Sinh năm 2022, là ngày đặc biệt với chúng tôi, đây là thời điểm khởi đầu cho tình yêu này...</p>
-									</div>
+							<div class="textContent">
+								<p class="lead">Chúng tôi gặp nhau tại Phan Thiết và ngay lập tức tìm thấy tiếng nói
+									chung, vì vậy một thời gian sau buổi hẹn hò đầu tiên của chúng tôi đã diễn ra.</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
-							<div class="caption image-meet">
-								<div class="star center-block">
-									<span class="h3">11</span>
-									<span>07</span>
-									<span>2024</span>
-								</div>
-								<div class="image image-meet">
-									<img src="images/meet3.jpeg" alt="" />
-									<div class="title">
-										<h2>Cầu hôn <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
-									</div>
-								</div>
-								<div class="textContent">
-									<p class="lead">Sau một khoảng thời gian yêu nhau, chúng tôi đã có một buổi cầu hôn vào năm 2024...</p>
-									</div>
-								
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+						<div class="caption image-meet">
+							<div class="star center-block">
+								<span class="h2">25</span>
+								<span>12</span>
+								<span>2022</span>
 							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
-							<div class="caption image-meet">
-								<div class="star center-block">
-									<span class="h3">05</span>
-									<span>01</span>
-									<span>2025</span>
-								</div>
-								<div class="image image-meet">
-									<img src="images/meet4.jpg" alt="" />
-									<div class="title">
-										<h2>Đính hôn <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
-									</div>
-								</div>
-								<div class="textContent">
-									<p class="lead">Hơn 3 năm tình yêu không phải là quãng thời gian quá dài, nhưng cũng không quá ngắn, đủ để chúng mình nhận ra nhiều điều...</p>
+							<div class="image image-meet">
+								<img src="images/meet2.jpg" alt="" />
+								<div class="title">
+									<h2>Hẹn hò <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 								</div>
 							</div>
+							<div class="textContent">
+								<p class="lead">Giáng Sinh năm 2022, là ngày đặc biệt với chúng tôi, đây là thời điểm
+									khởi đầu cho tình yêu này...</p>
+							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
-							<div class="caption image-meet">
-								<div class="star center-bloc image-meet">
-									<span class="h3">20</span>
-									<span>Jul</span>
-									<span>2025</span>
-								</div>
-								<div class="image">
-									<img src="images/meet5.JPG" alt="" />
-									<div class="title">
-										<h2>Lễ thành hôn<i class="fa fa-angle-right" aria-hidden="true"></i></h2>
-									</div>
-								</div>
-								<div class="textContent">
-									<p class="lead">Cuối cùng ngày vui nhất của chúng mình cũng tới rồi. Cảm ơn vì chúng ta đã luôn là một phần trong cuộc sống của nhau. Em và anh không chỉ là người yêu mà còn là tri kỷ, là bạn đồng hành. Kể từ Ngày hôm nay, em là Vợ, anh là Chồng và chúng ta là Một gia đình hạnh phúc..</p>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+						<div class="caption image-meet">
+							<div class="star center-block">
+								<span class="h2">11</span>
+								<span>07</span>
+								<span>2024</span>
+							</div>
+							<div class="image image-meet">
+								<img src="images/meet3.jpg" alt="" />
+								<div class="title">
+									<h2>Cầu hôn <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 								</div>
 							</div>
-						
+							<div class="textContent">
+								<p class="lead">Sau một khoảng thời gian yêu nhau, chúng tôi đã có một buổi cầu hôn vào
+									năm 2024...</p>
+							</div>
 						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+						<div class="caption image-meet">
+							<div class="star center-block">
+								<span class="h2">05</span>
+								<span>01</span>
+								<span>2025</span>
+							</div>
+							<div class="image image-meet">
+								<img src="images/meet4.jpg" alt="" />
+								<div class="title">
+									<h2>Đính hôn <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+								</div>
+							</div>
+							<div class="textContent">
+								<p class="lead">Hơn 3 năm tình yêu không phải là quãng thời gian quá dài, nhưng cũng
+									không quá ngắn, đủ để chúng mình nhận ra nhiều điều...</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+						<div class="caption image-meet">
+							<div class="star center-bloc image-meet">
+								<span class="h2">20</span>
+								<span>07</span>
+								<span>2025</span>
+							</div>
+							<div class="image">
+								<img src="images/meetx.jpg" alt="" />
+								<div class="title">
+									<h2>Lễ thành hôn<i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+								</div>
+							</div>
+							<div class="textContent">
+								<p class="lead">Cuối cùng ngày vui nhất của chúng mình cũng tới rồi. Cảm ơn vì chúng ta
+									đã luôn là một phần trong cuộc sống của nhau. Em và anh không chỉ là người yêu mà
+									còn là tri kỷ, là bạn đồng hành. Kể từ Ngày hôm nay, em là Vợ, anh là Chồng và chúng
+									ta là Một gia đình hạnh phúc..</p>
+							</div>
+						</div>
+
+					</div>
 
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 	<!-- End Story -->
-	
-	
+
+
 	<!-- Start Gallery -->
 	<div id="gallery" class="gallery-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Album Hình Cưới	</h2>
+						<h2>Album Hình Cưới </h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-lg-12">
 				<ul class="popup-gallery clearfix">
 					<li>
 						<a href="images/gallery-01.jpg">
-							<img class="img-fluid" src="images/gallery-01.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-01.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-02.jpg">
-							<img class="img-fluid" src="images/gallery-02.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-02.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-03.jpg">
-							<img class="img-fluid" src="images/gallery-03.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-03.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-04.jpg">
-							<img class="img-fluid" src="images/gallery-04.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-04.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-05.jpg">
-							<img class="img-fluid" src="images/gallery-05.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-05.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-06.jpg">
-							<img class="img-fluid" src="images/gallery-06.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-06.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-07.jpg">
-							<img class="img-fluid" src="images/gallery-07.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-07.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 					<li>
 						<a href="images/gallery-08.jpg">
-							<img class="img-fluid" src="images/gallery-08.jpg" alt="single image">
+							<img rel="preload" class="img-fluid" src="images/gallery-08.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
 				</ul>
+				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="video-container">
-			  <iframe 
-                src="https://www.youtube.com/embed/7q6bWL3nFao?rel=0&autoplay=1&mute=1" 
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen>
-            </iframe>
+				<iframe loading="lazy" src="https://www.youtube.com/embed/7q6bWL3nFao?rel=0&autoplay=1&mute=1"
+					frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+				</iframe>
 			</div>
 		</div>
 	</div>
 
 	<!-- End Gallery -->
 
-	
+
 	<!-- Start Events -->
 	<div id="events" class="events-box">
 		<div class="container">
@@ -369,8 +430,9 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-01.jpg" alt="" />
 						</div>
-						<h2>13 Tháng 07 2025 Tiệc Cưới  Quảng Ngãi</h2>
-						<a href="https://maps.app.goo.gl/Js3CY1gocf3W5wPu5">Địa điểm tổ chức <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<h2>13 Tháng 07 2025 Tiệc Cưới Quảng Ngãi</h2>
+						<a href="https://maps.app.goo.gl/Js3CY1gocf3W5wPu5">Địa điểm tổ chức <i
+								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -378,8 +440,9 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-02.jpg" alt="" />
 						</div>
-						<h2>13 Tháng 7 2025 Lễ Vu Quy  Quảng Ngãi</h2>
-						<a href="https://maps.app.goo.gl/x6q6ifXfvVrc3yCEA">Địa điểm tổ chức <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<h2>14 Tháng 7 2025 Lễ Vu Quy Quảng Ngãi</h2>
+						<a href="https://maps.app.goo.gl/x6q6ifXfvVrc3yCEA">Địa điểm tổ chức <i
+								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -387,18 +450,19 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-03.jpg" alt="" />
 						</div>
-						<h2>20 Tháng 7 2025 Lễ Thành Hôn   Bình Thuận</h2>
-						<a href="https://maps.app.goo.gl/nNGSMrBBGXnjDsDi8">Địa điểm tổ chức <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<h2>20 Tháng 7 2025 Lễ Thành Hôn Bình Thuận</h2>
+						<a href="https://maps.app.goo.gl/nNGSMrBBGXnjDsDi8">Địa điểm tổ chức <i
+								class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End Events -->
-	
-		
+
+
 	<!-- Start Wedding -->
-	
+
 	<div id="wedding" class="wedding-box">
 		<div class="container">
 			<div class="row">
@@ -409,33 +473,45 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
-				<div class="col-md-6 col-sm-12">
-                    <div class="serviceBox">
-                        <div class="service-icon"><i class="flaticon-wedding"></i></div>
-                        <h3 class="title">Mừng cưới đến chú rể</h3>
+				<div class="col-md-4 col-sm-12">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-wedding"></i></div>
+						<h3 class="title">Mừng cưới đến chú rể</h3>
 						<div class="about-img">
 							<img class="img-fluid qr" src="images/qr_1.jpg" alt="" />
 						</div>
-                        <p class="description">
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="serviceBox">
-                        <div class="service-icon"><i class="flaticon-wedding"></i></div>
-                        <h3 class="title">Mừng cưới đến cô dâu</h3>
+						<p class="description">
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-wedding"></i></div>
+						<h3 class="title">Mừng cưới đến cô dâu</h3>
 						<div class="about-img">
 							<img class="img-fluid qr" src="images/qr_2.jpg" alt="" />
 						</div>
-                    </div>
-                </div>
-            </div>
-			
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="serviceBox">
+						<div class="service-icon"><i class="flaticon-wedding"></i></div>
+						<h3 class="title">Phương tiện di chuyển</h3>
+						<div class="about-img">
+							<a href="https://zalo.me/g/sxhtuo263">
+								<img class="img-fluid qr" src="https://group-qr.zdn.vn/1/8b85b6f0ca9523cb7a84"
+									alt="Phuơng tiện di chuyển" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
-	
+
 	<!-- End Wedding -->
 
 	<!-- Start Contact -->
@@ -444,77 +520,76 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Thông tin liên hệ</h2>
+						<h2>Đăng ký bài hát</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 col-xs-12">
-				  <div class="contact-block">
-					<form id="contactForm">
-					  <div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>                                 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<select class="custom-select d-block form-control" id="guest" required data-error="Please select an item in the list.">
-								  <option disabled selected>Number Of Guest*</option>
-								  <option value="1">1</option>
-								  <option value="2">2</option>
-								  <option value="3">3</option>
-								  <option value="4">4</option>
-								  <option value="5">5</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<select class="custom-select d-block form-control" id="event" required data-error="Please select an item in the list.">
-								  <option disabled selected>I Am Attending*</option>
-								  <option value="1">All events</option>
-								  <option value="2">Wedding ceremony</option>
-								  <option value="3">Reception party</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-								<div class="help-block with-errors"></div>
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" name="name"
+											placeholder="Tên của bạn" required data-error="Vui lòng nhập tên của bạn">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<input type="text" placeholder="Tên bài hát" id="songname" class="form-control"
+											name="name" required data-error="Vui lòng nhập tên bài hát">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<input type="text" placeholder="Số điện thoại" id="phone" class="form-control"
+											name="name" required data-error="Vui lòng nhập số điện thoại của bạn">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Ghi chú" rows="8"
+											data-error="Nhập ghi chú"></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Đăng ký</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
 							</div>
-							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
-							</div>
-						</div>
-					  </div>            
-					</form>
-				  </div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End Contact -->
-	
+	<div class="contact-buttons">
+		<a href="#about" class="contact-button call" title="Thông tin">
+			<i class="fa-solid fa-circle-info"></i>
+		</a>
+
+		<a href="#wedding" class="contact-button call" title="Mừng cưới">
+			<i class="fa-solid fa-sack-dollar"></i>
+		</a>
+
+		<a href="#contact" class="contact-button call" title="Đăng ký bài hát">
+			<i class="fa-solid fa-music"></i>
+		</a>
+	</div>
+
 	<!-- Start Footer -->
 	<footer class="footer-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="footer-company-name">All Rights Reserved. &copy; 2024, Design By Manh Nguyen</p>
+					<p class="footer-company-name">All Rights Reserved. &copy; 2025, Design By Manh Nguyen</p>
 				</div>
 			</div>
 		</div>
@@ -525,15 +600,17 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
+	<!-- ALL PLUGINS -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/jquery.pogo-slider.min.js"></script>
 	<script src="js/slider-index.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
-    <script src="js/timeLine.min.js"></script>	
+	<script src="js/timeLine.min.js"></script>
 	<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://kit.fontawesome.com/d67964d1b4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
